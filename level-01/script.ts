@@ -22,14 +22,14 @@ console.log(reversedValue);
 
 // 3.
 function removeFalsyValues(array: any[]) {
-    const new_array: any[] = []
-    for (const element of array) {
-        if (element) {
-            new_array.push(element)
-        }
+  const new_array: any[] = [];
+  for (const element of array) {
+    if (element) {
+      new_array.push(element);
     }
-    return new_array;
+  }
+  return new_array;
 }
 
-const trueValueArray = removeFalsyValues(['', "Alana", 1, null, 0]);
+const trueValueArray = removeFalsyValues(["", "Alana", 1, null, 0]);
 console.log(trueValueArray);

@@ -26,5 +26,5 @@ function removeFalsyValues(array) {
     }
     return new_array;
 }
-const trueValueArray = removeFalsyValues(['', "Alana", 1, null, 0]);
+const trueValueArray = removeFalsyValues(["", "Alana", 1, null, 0]);
 console.log(trueValueArray);
