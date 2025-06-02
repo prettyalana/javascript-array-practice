@@ -14,3 +14,15 @@ function matchArrays(array: [string, any][]) {
   console.log(result);
 }
 
+// 2.
+function removeDuplicates(array: any[]) {
+    
+}
+
+{
+  const result = removeDuplicates([
+    1, 1, 1, 1, 1, 1, 2, 3, 4, 5, 5, 5, 5, 6, 7, 7, 7, 7, 7,
+  ]);
+  console.log(result);
+}
+
