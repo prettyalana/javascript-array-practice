@@ -13,6 +13,9 @@ function matchArrays(array) {
 }
 // 2.
 function removeDuplicates(array) {
+    let newArray = [];
+    newArray = array.filter((element, index) => array.indexOf(element) === index);
+    return newArray;
 }
 {
     const result = removeDuplicates([

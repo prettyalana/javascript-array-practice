@@ -16,7 +16,9 @@ function matchArrays(array: [string, any][]) {
 
 // 2.
 function removeDuplicates(array: any[]) {
-    
+  let newArray: [string, any][] = [];
+  newArray = array.filter((element, index) => array.indexOf(element) === index);
+  return newArray;
 }
 
 {
@@ -25,4 +27,3 @@ function removeDuplicates(array: any[]) {
   ]);
   console.log(result);
 }
-

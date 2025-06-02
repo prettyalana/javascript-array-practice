@@ -8,13 +8,13 @@ function createANewArray(string: string, count: number) {
   return array;
 }
 
-const new_array = createANewArray("sunshine", 3);
-console.log(new_array);
+const newArray = createANewArray("sunshine", 3);
+console.log(newArray);
 
 // 2.
 function reverseValues(array: any[]) {
-  const new_array = array.reverse();
-  return new_array;
+  const newArray = array.reverse();
+  return newArray;
 }
 
 const reversedValue = reverseValues([1, 2, 3, 4, 5]);
@@ -22,13 +22,13 @@ console.log(reversedValue);
 
 // 3.
 function removeFalsyValues(array: any[]) {
-  const new_array: any[] = [];
+  const newArray: any[] = [];
   for (const element of array) {
     if (element) {
-      new_array.push(element);
+      newArray.push(element);
     }
   }
-  return new_array;
+  return newArray;
 }
 
 const trueValueArray = removeFalsyValues(["", "Alana", 1, null, 0]);

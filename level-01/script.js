@@ -7,24 +7,24 @@ function createANewArray(string, count) {
     }
     return array;
 }
-const new_array = createANewArray("sunshine", 3);
-console.log(new_array);
+const newArray = createANewArray("sunshine", 3);
+console.log(newArray);
 // 2.
 function reverseValues(array) {
-    const new_array = array.reverse();
-    return new_array;
+    const newArray = array.reverse();
+    return newArray;
 }
 const reversedValue = reverseValues([1, 2, 3, 4, 5]);
 console.log(reversedValue);
 // 3.
 function removeFalsyValues(array) {
-    const new_array = [];
+    const newArray = [];
     for (const element of array) {
         if (element) {
-            new_array.push(element);
+            newArray.push(element);
         }
     }
-    return new_array;
+    return newArray;
 }
 const trueValueArray = removeFalsyValues(["", "Alana", 1, null, 0]);
 console.log(trueValueArray);
