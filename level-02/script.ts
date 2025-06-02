@@ -27,3 +27,24 @@ function removeDuplicates(array: any[]) {
   ]);
   console.log(result);
 }
+
+// 3.
+function identicalValues(array1: any[], array2: any[]) {
+
+  if (array1.length === array2.length) {
+    let isIdentical = true;
+    array1.forEach((element, index) => {
+      if (array1[index] !== array2[index]) {
+        isIdentical = false;;
+      }
+    });
+    return isIdentical;
+  }
+
+  return false;
+}
+
+{
+  const result = identicalValues([1, 2, 3, 4], [1, 2, 3, 5]);
+  console.log(result);
+}
